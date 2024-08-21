@@ -188,3 +188,10 @@ footer .social-icons a:hover img {
         margin-bottom: 20px;
     }
 }
+@media not all and (min-resolution: 0.001dpcm) { 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+        .column, textarea {
+            background: #232526; /* Fondo sólido para Safari */
+        }
+    }
+}
