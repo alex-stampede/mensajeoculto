@@ -41,7 +41,8 @@ h1 {
     width: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
     background: #0187872c;
     border-radius: 20px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
@@ -51,8 +52,8 @@ h1 {
 
 textarea {
     width: 100%;
-    height: 100px;
     border-radius: 10px;
+    height: 100%;
     padding: 10px;
     border: none;
     outline: none;
@@ -90,7 +91,7 @@ button:hover {
 
 #result {
     width: 100%;
-    height: 100px;
+    /* height: 100px; */ /* Elimina esta línea */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,6 +150,10 @@ footer {
     text-align: center;
     margin-top: 20px;
     box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
 }
 
 footer p {
