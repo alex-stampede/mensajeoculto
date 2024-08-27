@@ -61,3 +61,8 @@ function displayResult(resultText) {
     document.querySelector('#result img').style.display = 'none';
     document.querySelector('.no-message').style.display = 'none';
 }
+
+document.getElementById('inputText').addEventListener('input', function () {
+    this.style.height = 'auto'; // Resetear la altura
+    this.style.height = (this.scrollHeight) + 'px'; // Ajustar la altura al contenido
+});
